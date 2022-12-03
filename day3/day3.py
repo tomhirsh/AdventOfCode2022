@@ -1,5 +1,3 @@
-import pdb
-
 def char_score(char):
     if ord(char) >= ord('a'): # lower case
         return ord(char) - ord('a') + 1
