@@ -1,6 +1,4 @@
 from collections import defaultdict
-import pdb
-import os
 import numpy as np
 
 def add_to_sys_dir(sys_dir, current_path, next_file, dir_or_size):
@@ -34,7 +32,7 @@ if __name__ == "__main__":
     current_path = []
     sys_dir = {'/': defaultdict()}
 
-    with open(os.path.join('day7','data.txt'), 'r') as f:
+    with open('data.txt', 'r') as f:
         for line in f:
             line_splitted = line.strip().split()
             if line_splitted[0] == '$': #command
